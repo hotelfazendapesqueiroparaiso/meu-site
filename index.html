@@ -1,19 +1,111 @@
+
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Meu Refúgio Natureza</title>
-    <style>
-        body { background-color: #f1f8e9; color: #2e7d32; font-family: sans-serif; text-align: center; padding: 20px; }
-        .box { border: 2px solid #81c784; padding: 20px; border-radius: 15px; background: white; margin-top: 50px; }
-        h1 { color: #1b5e20; }
-    </style>
+  <meta charset="UTF-8">
+  <title>Hotel Fazenda Pesqueiro Paraíso</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(#e8f5e9, #ffffff);
+      text-align: center;
+    }
+
+    header {
+      background-color: #2e7d32;
+      color: white;
+      padding: 25px;
+    }
+
+    section {
+      padding: 25px;
+    }
+
+    footer {
+      background-color: #2e7d32;
+      color: white;
+      padding: 15px;
+    }
+
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      padding: 12px 18px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+
+    .foto-flutuante {
+      position: fixed;
+      bottom: 90px;
+      right: 20px;
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      animation: flutuar 3s ease-in-out infinite;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+      object-fit: cover;
+      z-index: 1000;
+    }
+
+    @keyframes flutuar {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+  </style>
 </head>
+
 <body>
-    <div class="box">
-        <h1>🌿 Bem-vindo ao meu espaço!</h1>
-        <p>Este site une o código com a paz da natureza.</p>
-        <p><strong>Status:</strong> Em construção com harmonia.</p>
-    </div>
+
+<header>
+  <h1>Hotel Fazenda Pesqueiro Paraíso</h1>
+  <p>Um lugar de paz, natureza e descanso</p>
+</header>
+
+<section>
+  <h2>Bem-vindo ao Paraíso</h2>
+  <p>
+    Aqui você encontra tranquilidade, ar puro e contato direto com a natureza.
+    Um espaço perfeito para descansar, pescar, passear e renovar as energias.
+  </p>
+  <p>
+    Nosso hotel fazenda oferece um ambiente familiar, rodeado de verde,
+    com lagos para pesca e muita paz para quem quer fugir da correria da cidade.
+  </p>
+  <p>
+    🌿 Natureza  
+    🎣 Pesqueiro  
+    🏡 Descanso  
+    ☀️ Sossego
+  </p>
+
+  <p>
+    Entre em contato pelo WhatsApp:
+  </p>
+  <h2>(67) 99923-0582</h2>
+</section>
+
+<footer>
+  <p>© 2026 - Hotel Fazenda Pesqueiro Paraíso</p>
+</footer>
+
+<!-- FOTO FLUTUANTE -->
+<img src="pesqueiro.jpg" alt="Pesqueiro" class="foto-flutuante">
+
+<!-- BOTÃO WHATSAPP -->
+<a class="whatsapp" href="https://wa.me/5567999230582" target="_blank">
+  WhatsApp
+</a>
+
 </body>
 </html>
