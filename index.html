@@ -1,128 +1,89 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Hotel Fazenda Pesqueiro Paraíso</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Fazenda Pesqueiro Paraíso</title>
+    <style>
+        body { margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0f7f0; color: #333; line-height: 1.6; }
+        header { background: #2e7d32; color: white; padding: 50px 20px; text-align: center; }
+        
+        /* LOGO FLUTUANTE */
+        .logo-fixa { position: fixed; top: 15px; left: 15px; width: 80px; height: 80px; border-radius: 50%; border: 3px solid white; box-shadow: 0 4px 10px rgba(0,0,0,0.3); z-index: 1000; object-fit: cover; }
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(#e8f5e9, #ffffff);
-      text-align: center;
-    }
+        .container { padding: 20px; max-width: 1100px; margin: auto; }
+        .secao { background: white; padding: 25px; border-radius: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-bottom: 30px; }
+        h2 { color: #2e7d32; border-bottom: 3px solid #a5d6a7; padding-bottom: 10px; margin-top: 0; }
 
-    header {
-      background-color: #2e7d32;
-      color: white;
-      padding: 25px;
-    }
-        </style>
+        /* GALERIA DE FOTOS */
+        .galeria { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 20px; }
+        .galeria img { width: 100%; height: 200px; object-fit: cover; border-radius: 12px; transition: 0.3s; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .galeria img:hover { transform: scale(1.05); }
+
+        /* BOTÃO WHATSAPP */
+        .btn-whatsapp { position: fixed; bottom: 25px; right: 25px; background: #25d366; color: white; padding: 18px 30px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 20px; box-shadow: 0 5px 20px rgba(0,0,0,0.4); z-index: 1000; display: flex; align-items: center; gap: 10px; }
+        
+        .footer { text-align: center; padding: 40px; color: #666; font-size: 14px; }
+        @media (max-width: 600px) { .logo-fixa { width: 60px; height: 60px; } .btn-whatsapp { padding: 15px 20px; font-size: 16px; } }
+    </style>
 </head>
 <body>
+
+    <img src="1000262013.jpg" class="logo-fixa" alt="Logo Hotel Fazenda">
+
     <header>
-        <h1>Hotel Fazenda do Pedrinho</h1>
+        <h1>Hotel Fazenda Pesqueiro Paraíso</h1>
+        <p>O seu refúgio de paz e contato direto com a natureza</p>
     </header>
-    
-    <main>
-    <imgsrc="1000324481.jpg">. Na frente dele, coloque um >.
-      </main>
-        </body>
-  </html>
-</body>
-</html>
 
+    <div class="container">
+        
+        <div class="secao">
+            <h2>🌿 Natureza e Acomodações</h2>
+            <p>Desfrute de <strong>chalés rústicos e confortáveis</strong>, amplo gramado para lazer e contato direto com os animais do sítio. O lugar perfeito para relaxar com a família.</p>
+            <div class="galeria">
+                <img src="1000324481.jpg">
+                <img src="1000264188.jpg">
+                <img src="1000261262.jpg">
+                <img src="1000260465.jpg">
+                <img src="1000272564.png">
+            </div>
+        </div>
 
-    section {
-      padding: 25px;
-    }
+        <div class="secao">
+            <h2>🏊 Lazer e Piscina</h2>
+            <p>Piscina grande para adultos e crianças, ideal para se refrescar durante o dia ou aproveitar o visual à noite.</p>
+            <div class="galeria">
+                <img src="1000262040.jpg">
+                <img src="1000278082.png">
+                <img src="1000262228.jpg">
+            </div>
+        </div>
 
-    footer {
-      background-color: #2e7d32;
-      color: white;
-      
-    }
+        <div class="secao">
+            <h2>🍞 Comida Típica no Forno a Lenha</h2>
+            <p>Saboreie o melhor da roça: pão feito a banha quentinho, queijos artesanais, salames, sucos naturais e porções variadas feitas no capricho.</p>
+            <div class="galeria">
+                <img src="1000265977.jpg">
+                <img src="1000278099.png">
+            </div>
+        </div>
 
-    .whatsapp {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #25d366;
-      color: white;
-      padding: 12px 18px;
-      border-radius: 50px;
-      text-decoration: none;
-      font-weight: bold;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-      z-index: 1000;
-    }
+        <div class="secao" style="text-align: center;">
+            <h2>📍 Reservas e Informações</h2>
+            <p style="font-size: 1.2em;">Entre em contato diretamente pelo nosso WhatsApp:</p>
+            <p style="font-size: 1.5em; color: #2e7d32;"><strong>(67) 99923-0582</strong></p>
+        </div>
 
-    .foto-flutuante {
-      position: fixed;
-      bottom: 90px;
-      right: 20px;
-      width: 90px;
-      height: 90px;
-      border-radius: 50%;
-      animation: flutuar 3s ease-in-out infinite;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
-      object-fit: cover;
-      z-index: 1000;
-    }
+    </div>
 
-    @keyframes flutuar {
-      0% { transform: translateY(0px); }
-      50% { transform: translateY(-10px); }
-      100% { transform: translateY(0px); }
-    }
-  </style>
-</head>
+    <div class="footer">
+        <p>&copy; 2024 Hotel Fazenda Pesqueiro Paraíso - Todos os direitos reservados.</p>
+    </div>
 
-<body>
-
-<header>
-  <h1>Hotel Fazenda Pesqueiro Paraíso</h1>
-  <p>Um lugar de paz, natureza e descanso</p>
-</header>
-
-<section>
-  <h2>Bem-vindo ao Paraíso</h2>
-  <p>
-    Aqui você encontra tranquilidade, ar puro e contato direto com a natureza.
-    Um espaço perfeito para descansar, pescar, passear e renovar as energias.
-  </p>
-  <p>
-    Nosso hotel fazenda oferece um ambiente familiar, rodeado de verde,
-    com lagos para pesca e muita paz para quem quer fugir da correria da cidade.
-  </p>
-  <p>
-    🌿 Natureza  
-    🎣 Pesqueiro  
-    🏡 Descanso  
-    ☀️ Sossego
-  </p>
-
-  <p>
-    Entre em contato pelo WhatsApp:
-  </p>
-  <h2>(67) 99923-0582</h2>
-</section>
-
-<footer>
-  <p>© 2026 - Hotel Fazenda Pesqueiro Paraíso</p>
-</footer>
-https://hotelfazendapesqueiroparaiso.github.io/meu-site/
-
-<a href="https://wa.me/5567998236445" target="_blank" style="position: fixed; bottom: 20px; right: 20px; z-index: 9999;">
-    <img src="https://i.ibb.co/Vp8YmCg/hotel-fazenda-paraiso.jpg" style="width: 85px; height: 85px; border-radius: 50%; border: 3px solid #25d366; box-shadow: 0 4px 12px rgba(0,0,0,0.4); object-fit: cover;"
-
-
-
-
-
-</a>
+    <a href="https://wa.me/5567999230582" class="btn-whatsapp" target="_blank">
+        💬 Reservar no WhatsApp
+    </a>
 
 </body>
 </html>
